@@ -1,0 +1,19 @@
+# Sistema de Gerenciamento de Hotel
+
+Este projeto é um sistema de gerenciamento de hotel implementado usando MySQL. O objetivo é gerenciar as informações de hóspedes, quartos e reservas.
+
+## Estrutura do Banco de Dados
+
+O banco de dados contém três tabelas principais:
+
+1. **hóspedes**: Informações sobre os hóspedes.
+2. **quartos**: Detalhes dos quartos disponíveis no hotel.
+3. **reservas**: Registro das reservas feitas pelos hóspedes.
+
+## Configuração do Banco de Dados
+
+1. **Criação do Banco de Dados**
+
+   ```sql
+   CREATE DATABASE HotelManagementSystem;
+   USE HotelManagementSystem;
