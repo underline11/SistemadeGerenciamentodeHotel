@@ -1,0 +1,25 @@
+Sistema de Gerenciamento de Hotel
+
+Este projeto consiste na implementação de um sistema de gerenciamento de hotel utilizando um banco de dados MySQL. O sistema permite a administração de hóspedes, quartos e reservas em um hotel. O banco de dados foi estruturado para gerenciar informações dos hóspedes, detalhes dos quartos e o processo de reservas.
+
+Tabelas:
+
+hóspedes: Armazena informações sobre os hóspedes.
+
+id_hospede (INT, AUTO_INCREMENT, PRIMARY KEY): Identificador único do hóspede.
+nome (VARCHAR(100)): Nome do hóspede.
+telefone (VARCHAR(20)): Número de telefone do hóspede.
+email (VARCHAR(100)): Endereço de e-mail do hóspede.
+quartos: Armazena informações sobre os quartos disponíveis no hotel.
+
+id_quarto (INT, AUTO_INCREMENT, PRIMARY KEY): Identificador único do quarto.
+numero_quarto (INT): Número do quarto.
+tipo (VARCHAR(50)): Tipo de quarto (e.g., Solteiro, Casal, Triplo, Suite).
+preco (DECIMAL(10, 2)): Preço por noite.
+reservas: Registra as reservas feitas pelos hóspedes.
+
+id_reserva (INT, AUTO_INCREMENT, PRIMARY KEY): Identificador único da reserva.
+id_hospede (INT, FOREIGN KEY): Identificador do hóspede que fez a reserva.
+id_quarto (INT, FOREIGN KEY): Identificador do quarto reservado.
+data_check_in (DATE): Data de entrada.
+data_check_out (DATE): Data de saída.
